@@ -1,10 +1,22 @@
-import "./styles.css";
+import "./App.css";
 
-export default function App() {
+function App() {
+  const title = "Welcome to web";
+  const visits = 50;
+  const link = "http://www.google.com";
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <div className="content">
+        <h1>{title}</h1>
+        <p>visit {visits} times</p>
+        <p>{10}</p>
+        <p>{"Hello react"}</p>
+        <p>{[1, 2, 3, 4, 5]}</p>
+        <p>{Math.random() * 10}</p>
+        <a href={link}>Google site</a>
+      </div>
     </div>
   );
 }
+
+export default App;
